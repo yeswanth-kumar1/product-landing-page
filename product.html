@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="product.css">
+  <!-- Include Font Awesome stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...your-sha-hash..." crossorigin="anonymous" />
+</head>
+<body>
+  
+  <header>
+    <h1><i class="fas fa-shopping-cart"></i> Product Catalogue</h1>
+    <p>Amazing Products at greater discounts. Stay tuned for More products</p>
+    <div class="user-options">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Signup</a>
+    </div>
+    <div class="email-box">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="all-products">
+      <button id="showAllProducts">Show All Products</button>
+    </div>
+
+    <div class="product-columns" style="display: none;">
+      <div class="column">
+        <!-- Product 1 details -->
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399208-sm-r890nzkainu-481180996?$730_584_PNG$" alt="Product Image 1">
+        <h2>Galaxy Watch4 Classic Bluetooth (46mm)</h2>
+        <h3>At Just 9999/-</h3>
+        <p>The first smartwatch with Wear OS Powered by Samsung, Galaxy Watch4 Classic puts seamless access to your favorite apps on your wrist. You'll get a rich app selection from music streaming apps to anything in the massive library of health and fitness apps.</p>
+        <p>Here are some pros of the Galaxy Watch4 Classic Bluetooth (46mm): Battery life, Compatibility, Features, Fitness, Apps</p>
+      </div>
+      <div class="column">
+        <!-- Product 2 details -->
+        <div class="container">
+          <img src="https://assets.lotofcarrots.com/media/home/hero/device.webp" alt="Product Image 2" width="300" height="100">
+        </div>
+        <h2>RABBIT R1</h2>
+        <h3>At Just 16000/-</h3>
+        <p>The Rabbit r1 is square, and bright orange, and comes with a 2.88-inch color touchscreen on the front. It's quite a compact device, almost small enough to fit in the palm of a hand, and it weighs in at 115 grams (about 4 oz). There's only one design, for now – you can't pick this up in multiple colors.</p>
+        <p>PROS: Elegant Design, Advanced AI Capabilities, LAMDA abilities</p>
+      </div>
+      <div class="column">
+        <!-- Product 3 details -->
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-buds2-pro-r510-sm-r510nlvainu-533192220?$684_547_PNG$" alt="Product Image 3" width="400" height="300">
+        <h2>Galaxy Buds2 Pro</h2>
+        <h3>At Just 15990/-</h3>
+        <p>The Samsung Galaxy Buds2 Pro are wireless earbuds that offer a range of features. They are 15% smaller than the original Buds Pro and offer better active noise canceling (ANC). They also have a higher IP rating for water resistance and a head tracking feature for a more immersive audio experience.</p>
+        <p>PROS: Good voice-calling performance, Comfortable fit, Hands-free Bixby voice assistant, Fully waterproof (IPX7), Efficient ANC, Five hours of battery life.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span class="footer-text">&copy; 2024 Product Catalogue. All rights reserved.</span>
+    <p class="aligned-paragraph">- Sai Charan Reddy</p>
+  </footer>
+  <!-- <footer>
+    <p>&copy; 2024 Product Catalogue. All rights reserved.</p>
+    <p class="aligned-paragraph">- Sai Charan Reddy</p>
+  </footer>
+ -->
+  <script>
+    document.getElementById('showAllProducts').addEventListener('click', function() {
+      var productColumns = document.querySelector('.product-columns');
+      productColumns.style.display = (productColumns.style.display === 'none' || productColumns.style.display === '') ? 'flex' : 'none';
+    });
+  </script>
+
+</body>
+</html>
